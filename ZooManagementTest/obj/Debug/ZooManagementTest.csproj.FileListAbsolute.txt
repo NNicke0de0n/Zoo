@@ -1,0 +1,12 @@
+D:\Veronika\ZooManagementTest\ZooManagementTest\bin\Debug\ZooManagementTest.exe.config
+D:\Veronika\ZooManagementTest\ZooManagementTest\bin\Debug\ZooManagementTest.exe
+D:\Veronika\ZooManagementTest\ZooManagementTest\bin\Debug\ZooManagementTest.pdb
+D:\Veronika\ZooManagementTest\ZooManagementTest\obj\Debug\ZooManagementTest.csproj.AssemblyReference.cache
+D:\Veronika\ZooManagementTest\ZooManagementTest\obj\Debug\ZooManagementTest.AnimalEdit.resources
+D:\Veronika\ZooManagementTest\ZooManagementTest\obj\Debug\ZooManagementTest.Director.resources
+D:\Veronika\ZooManagementTest\ZooManagementTest\obj\Debug\ZooManagementTest.Properties.Resources.resources
+D:\Veronika\ZooManagementTest\ZooManagementTest\obj\Debug\ZooManagementTest.csproj.GenerateResource.cache
+D:\Veronika\ZooManagementTest\ZooManagementTest\obj\Debug\ZooManagementTest.csproj.CoreCompileInputs.cache
+D:\Veronika\ZooManagementTest\ZooManagementTest\obj\Debug\ZooManagementTest.exe
+D:\Veronika\ZooManagementTest\ZooManagementTest\obj\Debug\ZooManagementTest.pdb
+D:\Veronika\ZooManagementTest\ZooManagementTest\obj\Debug\ZooManagementTest.EmployeeEdit.resources
