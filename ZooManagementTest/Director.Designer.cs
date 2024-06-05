@@ -39,6 +39,7 @@
             this.removeEmployeeButton = new System.Windows.Forms.Button();
             this.choiceComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.addVisiterButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addButton
@@ -82,7 +83,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(926, 9);
+            this.label1.Location = new System.Drawing.Point(926, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 13);
             this.label1.TabIndex = 3;
@@ -91,7 +92,7 @@
             // employeeListBox
             // 
             this.employeeListBox.FormattingEnabled = true;
-            this.employeeListBox.Location = new System.Drawing.Point(369, 31);
+            this.employeeListBox.Location = new System.Drawing.Point(555, 31);
             this.employeeListBox.Name = "employeeListBox";
             this.employeeListBox.Size = new System.Drawing.Size(358, 199);
             this.employeeListBox.TabIndex = 1;
@@ -99,7 +100,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(366, 15);
+            this.label2.Location = new System.Drawing.Point(552, 15);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 13);
             this.label2.TabIndex = 4;
@@ -107,7 +108,7 @@
             // 
             // editEmployeeButton
             // 
-            this.editEmployeeButton.Location = new System.Drawing.Point(571, 236);
+            this.editEmployeeButton.Location = new System.Drawing.Point(757, 236);
             this.editEmployeeButton.Name = "editEmployeeButton";
             this.editEmployeeButton.Size = new System.Drawing.Size(75, 23);
             this.editEmployeeButton.TabIndex = 5;
@@ -117,7 +118,7 @@
             // 
             // removeEmployeeButton
             // 
-            this.removeEmployeeButton.Location = new System.Drawing.Point(652, 236);
+            this.removeEmployeeButton.Location = new System.Drawing.Point(838, 236);
             this.removeEmployeeButton.Name = "removeEmployeeButton";
             this.removeEmployeeButton.Size = new System.Drawing.Size(75, 23);
             this.removeEmployeeButton.TabIndex = 5;
@@ -146,11 +147,22 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Выберите для добавления";
             // 
+            // addVisiterButton
+            // 
+            this.addVisiterButton.Location = new System.Drawing.Point(567, 495);
+            this.addVisiterButton.Name = "addVisiterButton";
+            this.addVisiterButton.Size = new System.Drawing.Size(158, 57);
+            this.addVisiterButton.TabIndex = 8;
+            this.addVisiterButton.Text = "Add Visiter";
+            this.addVisiterButton.UseVisualStyleBackColor = true;
+            this.addVisiterButton.Click += new System.EventHandler(this.addVisiterButton_Click);
+            // 
             // Director
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 607);
+            this.Controls.Add(this.addVisiterButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.choiceComboBox);
             this.Controls.Add(this.removeEmployeeButton);
@@ -182,6 +194,7 @@
         private System.Windows.Forms.Button removeEmployeeButton;
         private System.Windows.Forms.ComboBox choiceComboBox;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button addVisiterButton;
     }
 }
 

@@ -32,11 +32,13 @@
             this.cancelButton = new System.Windows.Forms.Button();
             this.acceptButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.countryTextBox = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // genderComboBox
@@ -66,6 +68,7 @@
             this.acceptButton.TabIndex = 1;
             this.acceptButton.Text = "Accept";
             this.acceptButton.UseVisualStyleBackColor = true;
+            this.acceptButton.Click += new System.EventHandler(this.acceptButton_Click);
             // 
             // label1
             // 
@@ -76,12 +79,12 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Выберите пол";
             // 
-            // textBox1
+            // nameTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(33, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(217, 20);
-            this.textBox1.TabIndex = 3;
+            this.nameTextBox.Location = new System.Drawing.Point(33, 35);
+            this.nameTextBox.Name = "nameTextBox";
+            this.nameTextBox.Size = new System.Drawing.Size(217, 20);
+            this.nameTextBox.TabIndex = 3;
             // 
             // label2
             // 
@@ -115,15 +118,33 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Введите возраст";
             // 
+            // countryTextBox
+            // 
+            this.countryTextBox.Location = new System.Drawing.Point(343, 87);
+            this.countryTextBox.Name = "countryTextBox";
+            this.countryTextBox.Size = new System.Drawing.Size(121, 20);
+            this.countryTextBox.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(340, 71);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Введите страну";
+            // 
             // FormVisiter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 450);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.countryTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.acceptButton);
@@ -142,10 +163,12 @@
         private System.Windows.Forms.Button cancelButton;
         private System.Windows.Forms.Button acceptButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox countryTextBox;
+        private System.Windows.Forms.Label label4;
     }
 }

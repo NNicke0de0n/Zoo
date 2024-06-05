@@ -16,6 +16,8 @@ namespace Zoo
     {
         Animal _animal;
         Employee _employee;
+        Visitor _visitor;
+        List<Visitor> _visitors = new List<Visitor>();
         List<Animal> _animals = new List<Animal>();
         List<Employee> _employees = new List<Employee>();
 
@@ -128,6 +130,19 @@ namespace Zoo
             }
         }
 
+
+        private void addVisiterButton_Click(object sender, EventArgs e)
+        {
+            FormVisiter formVisiter = new FormVisiter();
+            this.Hide();
+            formVisiter.ShowDialog();
+            this.Show();
+            if (formVisiter.DialogResult == DialogResult.OK)
+            {
+                
+            }
+        }
+
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics canvas = e.Graphics;
@@ -173,6 +188,5 @@ namespace Zoo
             SolidBrush blueBrush2 = new SolidBrush(Color.Violet);
             canvas.FillPolygon(blueBrush2, trianglePoints2);
         }
-
     }
 }
