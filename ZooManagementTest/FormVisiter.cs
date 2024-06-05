@@ -20,12 +20,7 @@ namespace Zoo
         private void StartComponent()
         {
             dateTimePicker1.Value = DateTime.Now;
-            FillComboBox(genderComboBox, typeof(Gender));
-        }
-
-        private void FillComboBox(ComboBox comboBox, Type type)
-        {
-            comboBox.DataSource = Enum.GetValues(type);
+            genderComboBox.DataSource = Enum.GetValues(typeof(Gender));
         }
     }
 }
