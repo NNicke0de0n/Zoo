@@ -1,6 +1,6 @@
 ﻿namespace Zoo
 {
-    partial class FormVisiter
+    partial class FormVisitor
     {
         /// <summary>
         /// Required designer variable.
@@ -39,10 +39,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.countryTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // genderComboBox
             // 
+            this.genderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.genderComboBox.FormattingEnabled = true;
             this.genderComboBox.Location = new System.Drawing.Point(343, 35);
             this.genderComboBox.Name = "genderComboBox";
@@ -97,7 +99,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(166, 196);
+            this.dateTimePicker1.Location = new System.Drawing.Point(33, 140);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 4;
@@ -134,11 +136,21 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Введите страну";
             // 
-            // FormVisiter
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(30, 124);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(142, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Выберите дату посещения";
+            // 
+            // FormVisitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 450);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.countryTextBox);
             this.Controls.Add(this.label3);
@@ -150,8 +162,8 @@
             this.Controls.Add(this.acceptButton);
             this.Controls.Add(this.cancelButton);
             this.Controls.Add(this.genderComboBox);
-            this.Name = "FormVisiter";
-            this.Text = "Visiter";
+            this.Name = "FormVisitor";
+            this.Text = "Visitor";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,5 +182,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox countryTextBox;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

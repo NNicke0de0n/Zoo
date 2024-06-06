@@ -9,13 +9,17 @@ namespace Zoo
         public string Position { get; set; }
         public decimal Salary { get; set; }
 
-        //Construct
         public Employee(string name, int age, string position, decimal salary)
         {
             Name = name;
             Age = age;
             Position = position;
             Salary = salary;
+        }
+
+        public override string ToString()
+        {
+            return $"{Name}, {Age} years old, {Position}, {Salary}";
         }
     }
 }

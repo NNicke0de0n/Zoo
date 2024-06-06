@@ -2,7 +2,7 @@
 
 namespace Zoo
 {
-    internal class Visitor
+    public class Visitor
     {
         public string Name { get; set; }
         public int Age {  get; set; }
@@ -17,6 +17,11 @@ namespace Zoo
             Gender = sex;
             Country = country;
             VisitDate = dateOfVisit;
+        }
+
+        public override string ToString()
+        {
+            return $"{Name} {Age} years old, {Gender}, {Country}, visited on {VisitDate}";
         }
     }
 }

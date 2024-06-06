@@ -10,24 +10,33 @@ using System.Windows.Forms;
 
 namespace Zoo
 {
-    public partial class FormVisiter : Form
+    public partial class FormVisitor : Form
     {
-        Visitor _visiter;
-        public FormVisiter()
+        private Visitor _visiter;
+
+        public Visitor Visitor
+        {
+            get { return _visiter; }
+            set { _visiter = value; }
+        }
+
+        public FormVisitor()
         {
             InitializeComponent();
+            StartComponent();
         }
 
         private void StartComponent()
         {
             dateTimePicker1.Value = DateTime.Now;
             genderComboBox.DataSource = Enum.GetValues(typeof(Gender));
-
         }
 
         private void acceptButton_Click(object sender, EventArgs e)
         {
-            _visiter = new Visitor(nameTextBox.Text, int.Parse(maskedTextBox1.Text), (Gender)Enum.Parse(typeof(Gender), genderComboBox.SelectedItem.ToString()), countryTextBox.Text, dateTimePicker1.Value);
+            _visiter = new Visitor(nameTextBox.Text, int.Parse(maskedTextBox1.Text),
+                (Gender)Enum.Parse(typeof(Gender), genderComboBox.SelectedItem.ToString()),
+                countryTextBox.Text, dateTimePicker1.Value);
         }
     }
 }

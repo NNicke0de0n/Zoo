@@ -39,7 +39,8 @@
             this.removeEmployeeButton = new System.Windows.Forms.Button();
             this.choiceComboBox = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.addVisiterButton = new System.Windows.Forms.Button();
+            this.vistorsListBox = new System.Windows.Forms.ListBox();
+            this.showAllVisitorsButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addButton
@@ -132,7 +133,8 @@
             this.choiceComboBox.FormattingEnabled = true;
             this.choiceComboBox.Items.AddRange(new object[] {
             "Employee",
-            "Animal"});
+            "Animal",
+            "Visitor"});
             this.choiceComboBox.Location = new System.Drawing.Point(996, 446);
             this.choiceComboBox.Name = "choiceComboBox";
             this.choiceComboBox.Size = new System.Drawing.Size(260, 21);
@@ -147,22 +149,29 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Выберите для добавления";
             // 
-            // addVisiterButton
+            // vistorsListBox
             // 
-            this.addVisiterButton.Location = new System.Drawing.Point(567, 495);
-            this.addVisiterButton.Name = "addVisiterButton";
-            this.addVisiterButton.Size = new System.Drawing.Size(158, 57);
-            this.addVisiterButton.TabIndex = 8;
-            this.addVisiterButton.Text = "Add Visiter";
-            this.addVisiterButton.UseVisualStyleBackColor = true;
-            this.addVisiterButton.Click += new System.EventHandler(this.addVisiterButton_Click);
+            this.vistorsListBox.FormattingEnabled = true;
+            this.vistorsListBox.Location = new System.Drawing.Point(555, 365);
+            this.vistorsListBox.Name = "vistorsListBox";
+            this.vistorsListBox.Size = new System.Drawing.Size(358, 199);
+            this.vistorsListBox.TabIndex = 1;
+            // 
+            // showAllVisitorsButton
+            // 
+            this.showAllVisitorsButton.Location = new System.Drawing.Point(838, 570);
+            this.showAllVisitorsButton.Name = "showAllVisitorsButton";
+            this.showAllVisitorsButton.Size = new System.Drawing.Size(75, 23);
+            this.showAllVisitorsButton.TabIndex = 8;
+            this.showAllVisitorsButton.Text = "Show All Array";
+            this.showAllVisitorsButton.UseVisualStyleBackColor = true;
             // 
             // Director
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 607);
-            this.Controls.Add(this.addVisiterButton);
+            this.Controls.Add(this.showAllVisitorsButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.choiceComboBox);
             this.Controls.Add(this.removeEmployeeButton);
@@ -171,6 +180,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.removeAnimal);
             this.Controls.Add(this.editAnimal);
+            this.Controls.Add(this.vistorsListBox);
             this.Controls.Add(this.employeeListBox);
             this.Controls.Add(this.animalListBox);
             this.Controls.Add(this.addButton);
@@ -194,7 +204,8 @@
         private System.Windows.Forms.Button removeEmployeeButton;
         private System.Windows.Forms.ComboBox choiceComboBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button addVisiterButton;
+        private System.Windows.Forms.ListBox vistorsListBox;
+        private System.Windows.Forms.Button showAllVisitorsButton;
     }
 }
 

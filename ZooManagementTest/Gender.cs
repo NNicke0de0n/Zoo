@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zoo
 {
-    enum Gender
+    public enum Gender
     {
         Male,
         Female

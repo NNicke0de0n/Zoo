@@ -19,5 +19,10 @@ namespace Zoo
             Sex = sex;
             EatType = eatType;
         }
+
+        public override string ToString()
+        {
+            return $"{Name}, {Sex}, {AnimalType}";
+        }
     }
 }

@@ -13,7 +13,7 @@ namespace Zoo
 {
     public partial class EmployeeEdit : Form
     {
-        Employee _emoloyee;
+        private Employee _emoloyee;
 
         public Employee EditEmployee
         {

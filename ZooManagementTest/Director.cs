@@ -35,6 +35,10 @@ namespace Zoo
                 {
                     AddEmployee();
                 }
+                else if(choiceComboBox.Text == nameof(Visitor))
+                {
+                    AddVisiter();
+                }
                 else
                 {
                     AddAnimal();
@@ -56,7 +60,7 @@ namespace Zoo
             }
         }
 
-        void AddAnimal()
+        private void AddAnimal()
         {
             AnimalEdit animalEdit = new AnimalEdit();
             this.Hide();
@@ -131,15 +135,15 @@ namespace Zoo
         }
 
 
-        private void addVisiterButton_Click(object sender, EventArgs e)
+        private void AddVisiter()
         {
-            FormVisiter formVisiter = new FormVisiter();
+            FormVisitor formVisiter = new FormVisitor();
             this.Hide();
             formVisiter.ShowDialog();
             this.Show();
             if (formVisiter.DialogResult == DialogResult.OK)
             {
-                
+                _visitors.Add(formVisiter.Visitor);
             }
         }
 
