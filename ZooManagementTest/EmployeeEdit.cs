@@ -35,7 +35,7 @@ namespace Zoo
             InitializeComponent();
         }
 
-        //кнопка accept, проверяет знчение возраста
+        //кнопка accept, проверяет значение возраста
         private void button2_Click(object sender, EventArgs e)
         {
             int value;

@@ -54,6 +54,7 @@
       <DependentUpon>AnimalEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="AnimalType.cs" />
+    <Compile Include="Countries.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="Director.cs">
       <SubType>Form</SubType>

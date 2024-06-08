@@ -35,3 +35,16 @@ C:\Projects\Zoo\Zoo\ZooManagementTest\bin\Debug\Zoo.exe.config
 C:\Projects\Zoo\Zoo\ZooManagementTest\bin\Debug\Zoo.exe
 C:\Projects\Zoo\Zoo\ZooManagementTest\bin\Debug\Zoo.pdb
 C:\Projects\Zoo\Zoo\ZooManagementTest\obj\Debug\Zoo.FormVisitor.resources
+B:\LocalHub\Zoo\ZooManagementTest\bin\Debug\Zoo.exe.config
+B:\LocalHub\Zoo\ZooManagementTest\bin\Debug\Zoo.exe
+B:\LocalHub\Zoo\ZooManagementTest\bin\Debug\Zoo.pdb
+B:\LocalHub\Zoo\ZooManagementTest\obj\Debug\Zoo.csproj.AssemblyReference.cache
+B:\LocalHub\Zoo\ZooManagementTest\obj\Debug\Zoo.AnimalEdit.resources
+B:\LocalHub\Zoo\ZooManagementTest\obj\Debug\Zoo.Director.resources
+B:\LocalHub\Zoo\ZooManagementTest\obj\Debug\Zoo.EmployeeEdit.resources
+B:\LocalHub\Zoo\ZooManagementTest\obj\Debug\Zoo.FormVisitor.resources
+B:\LocalHub\Zoo\ZooManagementTest\obj\Debug\Zoo.Properties.Resources.resources
+B:\LocalHub\Zoo\ZooManagementTest\obj\Debug\Zoo.csproj.GenerateResource.cache
+B:\LocalHub\Zoo\ZooManagementTest\obj\Debug\Zoo.csproj.CoreCompileInputs.cache
+B:\LocalHub\Zoo\ZooManagementTest\obj\Debug\Zoo.exe
+B:\LocalHub\Zoo\ZooManagementTest\obj\Debug\Zoo.pdb

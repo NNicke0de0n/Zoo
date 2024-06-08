@@ -35,7 +35,7 @@ namespace Zoo
                 {
                     AddEmployee();
                 }
-                else if(choiceComboBox.Text == nameof(Visitor))
+                else if (choiceComboBox.Text == nameof(Visitor))
                 {
                     AddVisiter();
                 }
@@ -144,7 +144,24 @@ namespace Zoo
             if (formVisiter.DialogResult == DialogResult.OK)
             {
                 _visitors.Add(formVisiter.Visitor);
+                RefreshVisitorsList();
             }
+        }
+
+        private void RefreshVisitorsList()
+        {
+            if (_visitors.Count == 0)
+                return;
+            vistorsListBox.Items.Clear();
+            foreach (var visitor in _visitors)
+            {
+                vistorsListBox.Items.Add(visitor.ToString());
+            }
+        }
+
+        private void showAllVisitorsButton_Click(object sender, EventArgs e)
+        {
+            RefreshVisitorsList();
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
@@ -192,5 +209,6 @@ namespace Zoo
             SolidBrush blueBrush2 = new SolidBrush(Color.Violet);
             canvas.FillPolygon(blueBrush2, trianglePoints2);
         }
+
     }
 }

@@ -142,7 +142,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.nameTextBox);
             this.Name = "EmployeeEdit";
-            this.Text = "EmployeeEdit";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -7,10 +7,10 @@ namespace Zoo
         public string Name { get; set; }
         public int Age {  get; set; }
         public Gender Gender { get; set; }
-        public string Country { get; set; }
+        public Countries Country { get; set; }
         public DateTime VisitDate { get; set; }
 
-        public Visitor(string name ,int age, Gender sex, string country, DateTime dateOfVisit) 
+        public Visitor(string name ,int age, Gender sex, Countries country, DateTime dateOfVisit) 
         {
             Name = name;
             Age = age;

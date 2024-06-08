@@ -37,9 +37,9 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.countryTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.countriesComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // genderComboBox
@@ -106,8 +106,11 @@
             // 
             // maskedTextBox1
             // 
+            this.maskedTextBox1.Culture = new System.Globalization.CultureInfo("ru-BY");
             this.maskedTextBox1.Location = new System.Drawing.Point(33, 87);
+            this.maskedTextBox1.Mask = "00";
             this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.PromptChar = '*';
             this.maskedTextBox1.Size = new System.Drawing.Size(69, 20);
             this.maskedTextBox1.TabIndex = 5;
             // 
@@ -119,13 +122,6 @@
             this.label3.Size = new System.Drawing.Size(93, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Введите возраст";
-            // 
-            // countryTextBox
-            // 
-            this.countryTextBox.Location = new System.Drawing.Point(343, 87);
-            this.countryTextBox.Name = "countryTextBox";
-            this.countryTextBox.Size = new System.Drawing.Size(121, 20);
-            this.countryTextBox.TabIndex = 7;
             // 
             // label4
             // 
@@ -145,6 +141,15 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Выберите дату посещения";
             // 
+            // countriesComboBox
+            // 
+            this.countriesComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.countriesComboBox.FormattingEnabled = true;
+            this.countriesComboBox.Location = new System.Drawing.Point(343, 87);
+            this.countriesComboBox.Name = "countriesComboBox";
+            this.countriesComboBox.Size = new System.Drawing.Size(121, 21);
+            this.countriesComboBox.TabIndex = 0;
+            // 
             // FormVisitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -152,7 +157,6 @@
             this.ClientSize = new System.Drawing.Size(505, 450);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.countryTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.dateTimePicker1);
@@ -161,6 +165,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.acceptButton);
             this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.countriesComboBox);
             this.Controls.Add(this.genderComboBox);
             this.Name = "FormVisitor";
             this.Text = "Visitor";
@@ -180,8 +185,8 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox countryTextBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox countriesComboBox;
     }
 }

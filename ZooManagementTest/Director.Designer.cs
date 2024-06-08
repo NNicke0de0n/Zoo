@@ -165,6 +165,7 @@
             this.showAllVisitorsButton.TabIndex = 8;
             this.showAllVisitorsButton.Text = "Show All Array";
             this.showAllVisitorsButton.UseVisualStyleBackColor = true;
+            this.showAllVisitorsButton.Click += new System.EventHandler(this.showAllVisitorsButton_Click);
             // 
             // Director
             // 
