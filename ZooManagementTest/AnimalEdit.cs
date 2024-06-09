@@ -35,6 +35,7 @@ namespace Zoo
             FillComboBox(genderComboBox, typeof(Gender));
         }
 
+        //переключает потребляемый корм в зависимости от выбранного животного
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             TreeNode treeNode = e.Node;
@@ -100,8 +101,21 @@ namespace Zoo
 
         private void acceptButton_Click(object sender, EventArgs e)
         {
-            _animal = new Animal(nameTextBox.Text, descriptionsTextBox.Text, classAnimalTextBox.Text, foodTypeTextBox.Text, genderComboBox.Text);
+            if (string.IsNullOrEmpty(classAnimalTextBox.Text))
+            {
+                MessageBox.Show("Не установлен класс животного, проверьте корректность выбора");
+                classAnimalTextBox.Focus();
+                return;
+            }
+
+            if (string.IsNullOrEmpty(nameTextBox.Text))
+            {
+                MessageBox.Show("Присвойте животному кличку");
+                nameTextBox.Focus();
+                return;
+            }
             this.DialogResult = DialogResult.OK;
+            _animal = new Animal(nameTextBox.Text, descriptionsTextBox.Text, classAnimalTextBox.Text, foodTypeTextBox.Text, genderComboBox.Text);
         }
     }
 }

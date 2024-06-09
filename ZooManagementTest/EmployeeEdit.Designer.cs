@@ -66,7 +66,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 73);
+            this.label2.Location = new System.Drawing.Point(17, 86);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 13);
             this.label2.TabIndex = 3;
@@ -90,7 +90,7 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "Accept";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.AcceptButton_Click);
             // 
             // ageMaskedTextBox
             // 
@@ -99,7 +99,7 @@
             this.ageMaskedTextBox.Name = "ageMaskedTextBox";
             this.ageMaskedTextBox.PromptChar = '*';
             this.ageMaskedTextBox.Size = new System.Drawing.Size(100, 20);
-            this.ageMaskedTextBox.TabIndex = 6;
+            this.ageMaskedTextBox.TabIndex = 1;
             // 
             // label3
             // 
@@ -115,7 +115,7 @@
             this.salaryTextBox.Location = new System.Drawing.Point(20, 230);
             this.salaryTextBox.Name = "salaryTextBox";
             this.salaryTextBox.Size = new System.Drawing.Size(222, 20);
-            this.salaryTextBox.TabIndex = 8;
+            this.salaryTextBox.TabIndex = 3;
             // 
             // label4
             // 

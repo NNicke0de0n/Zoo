@@ -36,8 +36,16 @@ namespace Zoo
         }
 
         //кнопка accept, проверяет значение возраста
-        private void button2_Click(object sender, EventArgs e)
+        private void AcceptButton_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(nameTextBox.Text))
+            {
+                MessageBox.Show("Введите имя");
+                nameTextBox.Focus();
+                return;
+            }
+
+            decimal salary;
             int value;
             if (int.TryParse(ageMaskedTextBox.Text, out value))
             {
@@ -47,11 +55,20 @@ namespace Zoo
                     ageMaskedTextBox.Focus();
                     return;
                 }
-                this.DialogResult = DialogResult.OK;
             }
+
+            if (!decimal.TryParse(salaryTextBox.Text, out salary))
+            {
+                MessageBox.Show("Введите корректное значение зарплаты");
+                salaryTextBox.Focus();
+                return;
+            }
+
+            this.DialogResult = DialogResult.OK;
+
             _emoloyee = new Employee(nameTextBox.Text,
-                int.Parse(ageMaskedTextBox.Text), 
-                positionTextBox.Text, 
+                int.Parse(ageMaskedTextBox.Text),
+                positionTextBox.Text,
                 decimal.Parse(salaryTextBox.Text));
         }
     }

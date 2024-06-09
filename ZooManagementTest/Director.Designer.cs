@@ -41,6 +41,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.vistorsListBox = new System.Windows.Forms.ListBox();
             this.showAllVisitorsButton = new System.Windows.Forms.Button();
+            this.saveButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addButton
@@ -63,7 +64,7 @@
             // 
             // editAnimal
             // 
-            this.editAnimal.Location = new System.Drawing.Point(1130, 236);
+            this.editAnimal.Location = new System.Drawing.Point(1131, 237);
             this.editAnimal.Name = "editAnimal";
             this.editAnimal.Size = new System.Drawing.Size(75, 22);
             this.editAnimal.TabIndex = 2;
@@ -73,7 +74,7 @@
             // 
             // removeAnimal
             // 
-            this.removeAnimal.Location = new System.Drawing.Point(1211, 236);
+            this.removeAnimal.Location = new System.Drawing.Point(1212, 237);
             this.removeAnimal.Name = "removeAnimal";
             this.removeAnimal.Size = new System.Drawing.Size(75, 22);
             this.removeAnimal.TabIndex = 2;
@@ -109,7 +110,7 @@
             // 
             // editEmployeeButton
             // 
-            this.editEmployeeButton.Location = new System.Drawing.Point(757, 236);
+            this.editEmployeeButton.Location = new System.Drawing.Point(757, 237);
             this.editEmployeeButton.Name = "editEmployeeButton";
             this.editEmployeeButton.Size = new System.Drawing.Size(75, 23);
             this.editEmployeeButton.TabIndex = 5;
@@ -119,7 +120,7 @@
             // 
             // removeEmployeeButton
             // 
-            this.removeEmployeeButton.Location = new System.Drawing.Point(838, 236);
+            this.removeEmployeeButton.Location = new System.Drawing.Point(838, 237);
             this.removeEmployeeButton.Name = "removeEmployeeButton";
             this.removeEmployeeButton.Size = new System.Drawing.Size(75, 23);
             this.removeEmployeeButton.TabIndex = 5;
@@ -165,13 +166,23 @@
             this.showAllVisitorsButton.TabIndex = 8;
             this.showAllVisitorsButton.Text = "Show All Array";
             this.showAllVisitorsButton.UseVisualStyleBackColor = true;
-            this.showAllVisitorsButton.Click += new System.EventHandler(this.showAllVisitorsButton_Click);
+            // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(12, 5);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 9;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.SaveLists);
             // 
             // Director
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 607);
+            this.Controls.Add(this.saveButton);
             this.Controls.Add(this.showAllVisitorsButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.choiceComboBox);
@@ -207,6 +218,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ListBox vistorsListBox;
         private System.Windows.Forms.Button showAllVisitorsButton;
+        private System.Windows.Forms.Button saveButton;
     }
 }
 

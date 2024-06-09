@@ -2,6 +2,7 @@
 
 namespace Zoo
 {
+    [Serializable]
     public class Visitor
     {
         public string Name { get; set; }

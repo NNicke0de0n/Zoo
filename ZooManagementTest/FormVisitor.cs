@@ -35,23 +35,14 @@ namespace Zoo
 
         private void acceptButton_Click(object sender, EventArgs e)
         {
-            if(CheckDate())
-            
-            _visiter = new Visitor(nameTextBox.Text, int.Parse(maskedTextBox1.Text),
-                (Gender)Enum.Parse(typeof(Gender), genderComboBox.SelectedItem.ToString()),
-                (Countries)Enum.Parse(typeof(Countries), countriesComboBox.SelectedItem.ToString()), dateTimePicker1.Value);
-        }
-
-        private bool CheckDate()
-        {
             int value;
 
             if (int.TryParse(maskedTextBox1.Text, out value) && nameTextBox.Text != null)
             {
-                return true;
+                _visiter = new Visitor(nameTextBox.Text, int.Parse(maskedTextBox1.Text),
+               (Gender)Enum.Parse(typeof(Gender), genderComboBox.SelectedItem.ToString()),
+               (Countries)Enum.Parse(typeof(Countries), countriesComboBox.SelectedItem.ToString()), dateTimePicker1.Value);
             }
-
-            return false;
         }
     }
 }

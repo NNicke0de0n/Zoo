@@ -4,8 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,16 +16,14 @@ namespace Zoo
 {
     public partial class Director : Form
     {
-        Animal _animal;
-        Employee _employee;
-        Visitor _visitor;
-        List<Visitor> _visitors = new List<Visitor>();
-        List<Animal> _animals = new List<Animal>();
-        List<Employee> _employees = new List<Employee>();
+        private List<Animal> _animals = new List<Animal>();
+        private List<Employee> _employees = new List<Employee>();
+        private List<Visitor> _visitors = new List<Visitor>();
 
         public Director()
         {
             InitializeComponent();
+            LoadLists();
             this.Paint += Form1_Paint;
         }
 
@@ -31,46 +31,82 @@ namespace Zoo
         {
             if (choiceComboBox.SelectedItem != null)
             {
-                if (choiceComboBox.Text == nameof(Employee))
+                switch (choiceComboBox.SelectedItem.ToString())
                 {
-                    AddEmployee();
-                }
-                else if (choiceComboBox.Text == nameof(Visitor))
-                {
-                    AddVisiter();
-                }
-                else
-                {
-                    AddAnimal();
+                    case nameof(Employee):
+                        AddEmployee();
+                        break;
+                    case nameof(Visitor):
+                        AddVisitor();
+                        break;
+                    case nameof(Animal):
+                        AddAnimal();
+                        break;
                 }
             }
         }
 
-        void AddEmployee()
+        private void AddEmployee()
         {
-            EmployeeEdit employeeEdit = new EmployeeEdit();
+            var employeeEdit = new EmployeeEdit();
             this.Hide();
             employeeEdit.ShowDialog();
             this.Show();
             if (employeeEdit.DialogResult == DialogResult.OK)
             {
-                _employee = employeeEdit.EditEmployee;
-                _employees.Add(_employee);
-                employeeListBox.Items.Add(ShowInList(_employee));
+                var employee = employeeEdit.EditEmployee;
+                _employees.Add(employee);
+                RefreshList(_employees.Cast<Object>().ToList(), employeeListBox);
             }
         }
 
         private void AddAnimal()
         {
-            AnimalEdit animalEdit = new AnimalEdit();
+            var animalEdit = new AnimalEdit();
             this.Hide();
             animalEdit.ShowDialog();
             this.Show();
             if (animalEdit.DialogResult == DialogResult.OK)
             {
-                _animal = animalEdit.EditAnimal;
-                _animals.Add(_animal);
-                animalListBox.Items.Add(ShowInList(_animal));
+                var animal = animalEdit.EditAnimal;
+                _animals.Add(animal);
+                animalListBox.Items.Add(ShowInList(animal));
+            }
+        }
+
+        private void AddVisitor()
+        {
+            var formVisiter = new FormVisitor();
+            this.Hide();
+            formVisiter.ShowDialog();
+            this.Show();
+            if (formVisiter.DialogResult == DialogResult.OK)
+            {
+                var visitor = formVisiter.Visitor;
+                _visitors.Add(visitor);
+                RefreshList(_visitors.Cast<Object>().ToList(), vistorsListBox);
+            }
+        }
+
+        private void RefreshList(List<object> fromList, ListBox inListBox)
+        {
+            inListBox.Items.Clear();
+            foreach (var obj in fromList)
+            {
+                inListBox.Items.Add(obj.ToString());
+            }
+        }
+
+        private string ShowInList(object obj)
+        {
+            if (obj is Animal animal)
+            {
+                return $"{animal.Name} {animal.AnimalType} {animal.Sex}";
+            }
+            
+            else
+            {
+                return obj.ToString();
             }
         }
 
@@ -87,33 +123,23 @@ namespace Zoo
         {
             if (animalListBox.SelectedItem == null)
                 return;
-            AnimalEdit animalEdit = new AnimalEdit();
+            var animalEdit = new AnimalEdit();
             animalEdit.EditAnimal = _animals[animalListBox.SelectedIndex];
             this.Hide();
-            DialogResult result = animalEdit.ShowDialog();
+            animalEdit.ShowDialog();
             this.Show();
-            if (result == DialogResult.OK)
+            if (animalEdit.DialogResult == DialogResult.OK)
             {
                 _animals[animalListBox.SelectedIndex] = animalEdit.EditAnimal;
                 animalListBox.Items[animalListBox.SelectedIndex] = ShowInList(_animals[animalListBox.SelectedIndex]);
             }
         }
 
-        public string ShowInList(Animal animal)
-        {
-            return ($"{animal.Name} {animal.AnimalType}");
-        }
-
-        public string ShowInList(Employee employee)
-        {
-            return ($"{employee.Name} {employee.Position}");
-        }
-
         private void editEmployeeButton_Click(object sender, EventArgs e)
         {
             if (employeeListBox.SelectedItem == null)
                 return;
-            EmployeeEdit employeeEdit = new EmployeeEdit();
+            var employeeEdit = new EmployeeEdit();
             employeeEdit.EditEmployee = _employees[employeeListBox.SelectedIndex];
             this.Hide();
             employeeEdit.ShowDialog();
@@ -134,36 +160,45 @@ namespace Zoo
             }
         }
 
-
-        private void AddVisiter()
+        private void SaveLists(object sender, EventArgs e)
         {
-            FormVisitor formVisiter = new FormVisitor();
-            this.Hide();
-            formVisiter.ShowDialog();
-            this.Show();
-            if (formVisiter.DialogResult == DialogResult.OK)
+            using (var fs = new FileStream("lists.bin", FileMode.Create))
             {
-                _visitors.Add(formVisiter.Visitor);
-                RefreshVisitorsList();
+                var formatter = new BinaryFormatter();
+                formatter.Serialize(fs, _animals);
+                formatter.Serialize(fs, _employees);
+                formatter.Serialize(fs, _visitors);
             }
         }
 
-        private void RefreshVisitorsList()
+        private void LoadLists()
         {
-            if (_visitors.Count == 0)
-                return;
-            vistorsListBox.Items.Clear();
-            foreach (var visitor in _visitors)
+            if (File.Exists("lists.bin"))
             {
-                vistorsListBox.Items.Add(visitor.ToString());
+                using (var fs = new FileStream("lists.bin", FileMode.Open))
+                {
+                    var formatter = new BinaryFormatter();
+                    _animals = (List<Animal>)formatter.Deserialize(fs);
+                    _employees = (List<Employee>)formatter.Deserialize(fs);
+                    _visitors = (List<Visitor>)formatter.Deserialize(fs);
+                    animalListBox.Items.Clear();
+                    foreach (var animal in _animals)
+                    {
+                        animalListBox.Items.Add(ShowInList(animal));
+                    }
+                    employeeListBox.Items.Clear();
+                    foreach (var employee in _employees)
+                    {
+                        employeeListBox.Items.Add(ShowInList(employee));
+                    }
+                    vistorsListBox.Items.Clear();
+                    foreach (var visitor in _visitors)
+                    {
+                        vistorsListBox.Items.Add(visitor.ToString());
+                    }
+                }
             }
         }
-
-        private void showAllVisitorsButton_Click(object sender, EventArgs e)
-        {
-            RefreshVisitorsList();
-        }
-
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics canvas = e.Graphics;

@@ -49,7 +49,7 @@
             this.genderComboBox.Location = new System.Drawing.Point(343, 35);
             this.genderComboBox.Name = "genderComboBox";
             this.genderComboBox.Size = new System.Drawing.Size(121, 21);
-            this.genderComboBox.TabIndex = 0;
+            this.genderComboBox.TabIndex = 2;
             // 
             // cancelButton
             // 
@@ -57,7 +57,7 @@
             this.cancelButton.Location = new System.Drawing.Point(372, 328);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
-            this.cancelButton.TabIndex = 1;
+            this.cancelButton.TabIndex = 6;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             // 
@@ -67,7 +67,7 @@
             this.acceptButton.Location = new System.Drawing.Point(291, 328);
             this.acceptButton.Name = "acceptButton";
             this.acceptButton.Size = new System.Drawing.Size(75, 23);
-            this.acceptButton.TabIndex = 1;
+            this.acceptButton.TabIndex = 5;
             this.acceptButton.Text = "Accept";
             this.acceptButton.UseVisualStyleBackColor = true;
             this.acceptButton.Click += new System.EventHandler(this.acceptButton_Click);
@@ -86,7 +86,7 @@
             this.nameTextBox.Location = new System.Drawing.Point(33, 35);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(217, 20);
-            this.nameTextBox.TabIndex = 3;
+            this.nameTextBox.TabIndex = 0;
             // 
             // label2
             // 
@@ -112,7 +112,7 @@
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.PromptChar = '*';
             this.maskedTextBox1.Size = new System.Drawing.Size(69, 20);
-            this.maskedTextBox1.TabIndex = 5;
+            this.maskedTextBox1.TabIndex = 1;
             // 
             // label3
             // 
@@ -148,7 +148,7 @@
             this.countriesComboBox.Location = new System.Drawing.Point(343, 87);
             this.countriesComboBox.Name = "countriesComboBox";
             this.countriesComboBox.Size = new System.Drawing.Size(121, 21);
-            this.countriesComboBox.TabIndex = 0;
+            this.countriesComboBox.TabIndex = 3;
             // 
             // FormVisitor
             // 

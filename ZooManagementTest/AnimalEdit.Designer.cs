@@ -557,7 +557,6 @@
             // 
             // acceptButton
             // 
-            this.acceptButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.acceptButton.Location = new System.Drawing.Point(90, 371);
             this.acceptButton.Name = "acceptButton";
             this.acceptButton.Size = new System.Drawing.Size(125, 36);
