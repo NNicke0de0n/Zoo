@@ -89,7 +89,7 @@ namespace Zoo
                     foodTypeTextBox.Text = "Кормовые насекомые";
                     break;
                 default:
-                    foodTypeTextBox.Text = "Корм пока не определён, обратить к источинкам в интернете";
+                    foodTypeTextBox.Text = "Корм не определён, обратить к источинкам в интернете";
                     break;
             }
         }
@@ -118,7 +118,7 @@ namespace Zoo
             if (string.IsNullOrEmpty(descriptionsTextBox.Text))
             {
                 MessageBox.Show("Выберите животное");
-                nameTextBox.Focus();
+                treeView1.Focus();
                 return;
             }
 

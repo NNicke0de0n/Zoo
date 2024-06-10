@@ -40,6 +40,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.countriesComboBox = new System.Windows.Forms.ComboBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // genderComboBox
@@ -149,11 +151,31 @@
             this.countriesComboBox.Size = new System.Drawing.Size(121, 21);
             this.countriesComboBox.TabIndex = 3;
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(33, 195);
+            this.maskedTextBox1.Mask = "0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.PromptChar = '*';
+            this.maskedTextBox1.Size = new System.Drawing.Size(121, 20);
+            this.maskedTextBox1.TabIndex = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(30, 179);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(144, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Введите стоимость билета";
+            // 
             // FormVisitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -187,5 +209,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox countriesComboBox;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Label label6;
     }
 }

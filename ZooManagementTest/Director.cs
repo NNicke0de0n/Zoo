@@ -244,6 +244,5 @@ namespace Zoo
             SolidBrush blueBrush2 = new SolidBrush(Color.Violet);
             canvas.FillPolygon(blueBrush2, trianglePoints2);
         }
-
     }
 }
