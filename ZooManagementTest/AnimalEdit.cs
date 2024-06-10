@@ -35,7 +35,7 @@ namespace Zoo
             FillComboBox(genderComboBox, typeof(Gender));
         }
 
-        //переключает потребляемый корм в зависимости от выбранного животного
+        //отображает потребляемый корм в зависимости от выбранного животного
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             TreeNode treeNode = e.Node;
@@ -114,6 +114,14 @@ namespace Zoo
                 nameTextBox.Focus();
                 return;
             }
+
+            if (string.IsNullOrEmpty(descriptionsTextBox.Text))
+            {
+                MessageBox.Show("Выберите животное");
+                nameTextBox.Focus();
+                return;
+            }
+
             this.DialogResult = DialogResult.OK;
             _animal = new Animal(nameTextBox.Text, descriptionsTextBox.Text, classAnimalTextBox.Text, foodTypeTextBox.Text, genderComboBox.Text);
         }

@@ -35,7 +35,7 @@
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.ageMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -63,7 +63,6 @@
             // 
             // acceptButton
             // 
-            this.acceptButton.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.acceptButton.Location = new System.Drawing.Point(291, 328);
             this.acceptButton.Name = "acceptButton";
             this.acceptButton.Size = new System.Drawing.Size(75, 23);
@@ -104,15 +103,15 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 4;
             // 
-            // maskedTextBox1
+            // ageMaskedTextBox
             // 
-            this.maskedTextBox1.Culture = new System.Globalization.CultureInfo("ru-BY");
-            this.maskedTextBox1.Location = new System.Drawing.Point(33, 87);
-            this.maskedTextBox1.Mask = "00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PromptChar = '*';
-            this.maskedTextBox1.Size = new System.Drawing.Size(69, 20);
-            this.maskedTextBox1.TabIndex = 1;
+            this.ageMaskedTextBox.Culture = new System.Globalization.CultureInfo("ru-BY");
+            this.ageMaskedTextBox.Location = new System.Drawing.Point(33, 87);
+            this.ageMaskedTextBox.Mask = "000";
+            this.ageMaskedTextBox.Name = "ageMaskedTextBox";
+            this.ageMaskedTextBox.PromptChar = '*';
+            this.ageMaskedTextBox.Size = new System.Drawing.Size(69, 20);
+            this.ageMaskedTextBox.TabIndex = 1;
             // 
             // label3
             // 
@@ -158,7 +157,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.ageMaskedTextBox);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.label2);
@@ -183,7 +182,7 @@
         private System.Windows.Forms.TextBox nameTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox ageMaskedTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

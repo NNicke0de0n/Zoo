@@ -36,13 +36,22 @@ namespace Zoo
         private void acceptButton_Click(object sender, EventArgs e)
         {
             int value;
-
-            if (int.TryParse(maskedTextBox1.Text, out value) && nameTextBox.Text != null)
+            if (int.TryParse(ageMaskedTextBox.Text, out value))
             {
-                _visiter = new Visitor(nameTextBox.Text, int.Parse(maskedTextBox1.Text),
+                
+            }
+
+            if (string.IsNullOrEmpty(ageMaskedTextBox.Text))
+            {
+                MessageBox.Show("Не указан возраст");
+                ageMaskedTextBox.Focus();
+                return;
+            }
+
+            this.DialogResult = DialogResult.OK;
+            _visiter = new Visitor(nameTextBox.Text, int.Parse(ageMaskedTextBox.Text),
                (Gender)Enum.Parse(typeof(Gender), genderComboBox.SelectedItem.ToString()),
                (Countries)Enum.Parse(typeof(Countries), countriesComboBox.SelectedItem.ToString()), dateTimePicker1.Value);
-            }
         }
     }
 }
