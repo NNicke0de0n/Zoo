@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|e:\\\u0438\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\repositoriy\\zoo\\zoomanagementtest\\formvisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|solutionrelative:zoomanagementtest\\formvisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\zoomanagementtest\\formvisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|solutionrelative:zoomanagementtest\\formvisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|e:\\\u0438\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\repositoriy\\zoo\\zoomanagementtest\\typeofticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|solutionrelative:zoomanagementtest\\typeofticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|e:\\\u0438\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\repositoriy\\zoo\\zoomanagementtest\\formvisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|solutionrelative:zoomanagementtest\\formvisitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\zoomanagementtest\\visitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|solutionrelative:zoomanagementtest\\visitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\zoomanagementtest\\director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|solutionrelative:zoomanagementtest\\director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\zoomanagementtest\\typeofticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|solutionrelative:zoomanagementtest\\typeofticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\zoomanagementtest\\director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|solutionrelative:zoomanagementtest\\director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\zoomanagementtest\\director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|solutionrelative:zoomanagementtest\\director.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\zoomanagementtest\\visitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|solutionrelative:zoomanagementtest\\visitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{54A9B334-F0EA-43F9-9C86-252ED48380D2}|ZooManagementTest\\Zoo.csproj|E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\zoomanagementtest\\countries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,17 +62,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Visitor.cs",
               "DocumentMoniker": "E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\ZooManagementTest\\Visitor.cs",
               "RelativeDocumentMoniker": "ZooManagementTest\\Visitor.cs",
               "ToolTip": "E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\ZooManagementTest\\Visitor.cs",
               "RelativeToolTip": "ZooManagementTest\\Visitor.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAIwBgAAAAXAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAwwBgAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-05T17:59:39.933Z",
               "IsPinned": true,
@@ -80,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TypeOfTicket.cs",
               "DocumentMoniker": "E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\ZooManagementTest\\TypeOfTicket.cs",
               "RelativeDocumentMoniker": "ZooManagementTest\\TypeOfTicket.cs",
@@ -93,20 +93,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FormVisitor.cs",
               "DocumentMoniker": "E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\ZooManagementTest\\FormVisitor.cs",
               "RelativeDocumentMoniker": "ZooManagementTest\\FormVisitor.cs",
               "ToolTip": "E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\ZooManagementTest\\FormVisitor.cs",
               "RelativeToolTip": "ZooManagementTest\\FormVisitor.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAwwDYAAAAmAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwCEAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-05T18:17:26.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FormVisitor.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\ZooManagementTest\\FormVisitor.cs",
               "RelativeDocumentMoniker": "ZooManagementTest\\FormVisitor.cs",
@@ -118,13 +118,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Director.cs",
               "DocumentMoniker": "E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\ZooManagementTest\\Director.cs",
               "RelativeDocumentMoniker": "ZooManagementTest\\Director.cs",
               "ToolTip": "E:\\\u0418\u043D\u0441\u0442\u0438\u0442\u0443\u0442\\Repositoriy\\Zoo\\ZooManagementTest\\Director.cs",
               "RelativeToolTip": "ZooManagementTest\\Director.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAAwGkAAAAMAAAA",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAcwGkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-05T23:00:26.476Z",
               "EditorCaption": ""
@@ -151,8 +151,7 @@
               "RelativeToolTip": "ZooManagementTest\\Countries.cs",
               "ViewState": "AQIAAIMAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-14T09:42:26.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-14T09:42:26.064Z"
             },
             {
               "$type": "Document",
@@ -164,8 +163,7 @@
               "RelativeToolTip": "ZooManagementTest\\Animal.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAcwAwAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-05T17:37:41.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-05T17:37:41.678Z"
             },
             {
               "$type": "Document",

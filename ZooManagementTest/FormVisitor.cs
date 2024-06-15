@@ -49,6 +49,7 @@ namespace Zoo
                 basePriceTextBox.Focus();
                 return;
             }
+
             if (string.IsNullOrEmpty(priceMaskedTextBox.Text) ||
                 int.Parse(ageMaskedTextBox.Text) >= 18 && ticketComboBox.SelectedItem.ToString() == nameof(TypeOfTicket.Childish))
             {
