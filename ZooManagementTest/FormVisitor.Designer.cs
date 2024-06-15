@@ -40,8 +40,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.countriesComboBox = new System.Windows.Forms.ComboBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.priceMaskedTextBox = new System.Windows.Forms.MaskedTextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.ticketComboBox = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.basePriceTextBox = new System.Windows.Forms.MaskedTextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // genderComboBox
@@ -114,6 +118,7 @@
             this.ageMaskedTextBox.PromptChar = '*';
             this.ageMaskedTextBox.Size = new System.Drawing.Size(69, 20);
             this.ageMaskedTextBox.TabIndex = 1;
+            
             // 
             // label3
             // 
@@ -151,31 +156,72 @@
             this.countriesComboBox.Size = new System.Drawing.Size(121, 21);
             this.countriesComboBox.TabIndex = 3;
             // 
-            // maskedTextBox1
+            // priceMaskedTextBox
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(33, 195);
-            this.maskedTextBox1.Mask = "0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.PromptChar = '*';
-            this.maskedTextBox1.Size = new System.Drawing.Size(121, 20);
-            this.maskedTextBox1.TabIndex = 10;
+            this.priceMaskedTextBox.Location = new System.Drawing.Point(33, 239);
+            this.priceMaskedTextBox.Name = "priceMaskedTextBox";
+            this.priceMaskedTextBox.PromptChar = '*';
+            this.priceMaskedTextBox.ReadOnly = true;
+            this.priceMaskedTextBox.Size = new System.Drawing.Size(121, 20);
+            this.priceMaskedTextBox.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(30, 179);
+            this.label6.Location = new System.Drawing.Point(340, 124);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(144, 13);
             this.label6.TabIndex = 11;
             this.label6.Text = "Введите стоимость билета";
+            // 
+            // ticketComboBox
+            // 
+            this.ticketComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ticketComboBox.FormattingEnabled = true;
+            this.ticketComboBox.Location = new System.Drawing.Point(33, 189);
+            this.ticketComboBox.Name = "ticketComboBox";
+            this.ticketComboBox.Size = new System.Drawing.Size(121, 21);
+            this.ticketComboBox.TabIndex = 12;
+            this.ticketComboBox.SelectedIndexChanged += new System.EventHandler(this.ticketComboBox_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(30, 173);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Тип билета";
+            // 
+            // basePriceTextBox
+            // 
+            this.basePriceTextBox.Location = new System.Drawing.Point(343, 140);
+            this.basePriceTextBox.Mask = "0000";
+            this.basePriceTextBox.Name = "basePriceTextBox";
+            this.basePriceTextBox.PromptChar = '*';
+            this.basePriceTextBox.Size = new System.Drawing.Size(121, 20);
+            this.basePriceTextBox.TabIndex = 10;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(33, 223);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(112, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Итоговая стоимость";
             // 
             // FormVisitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 450);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.ticketComboBox);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.basePriceTextBox);
+            this.Controls.Add(this.priceMaskedTextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -209,7 +255,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox countriesComboBox;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox priceMaskedTextBox;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox ticketComboBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.MaskedTextBox basePriceTextBox;
+        private System.Windows.Forms.Label label8;
     }
 }
