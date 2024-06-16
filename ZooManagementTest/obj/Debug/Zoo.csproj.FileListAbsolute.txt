@@ -61,3 +61,4 @@ E:\Институт\Repositoriy\Zoo\ZooManagementTest\obj\Debug\Zoo.csproj.Gener
 E:\Институт\Repositoriy\Zoo\ZooManagementTest\obj\Debug\Zoo.csproj.CoreCompileInputs.cache
 E:\Институт\Repositoriy\Zoo\ZooManagementTest\obj\Debug\Zoo.exe
 E:\Институт\Repositoriy\Zoo\ZooManagementTest\obj\Debug\Zoo.pdb
+D:\Veronika\Zoo\ZooManagementTest\obj\Debug\Zoo.FormVisitor.resources
