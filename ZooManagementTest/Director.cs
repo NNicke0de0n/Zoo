@@ -199,6 +199,13 @@ namespace Zoo
                 }
             }
         }
+
+        private void expensesAndIncomeButton_Click(object sender, EventArgs e)
+        {
+            var formExpensesAndIncome  = new FormExpensesAndIncome();
+            formExpensesAndIncome.ShowDialog();  
+        }
+
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
             Graphics canvas = e.Graphics;

@@ -62,3 +62,4 @@ E:\Институт\Repositoriy\Zoo\ZooManagementTest\obj\Debug\Zoo.csproj.CoreC
 E:\Институт\Repositoriy\Zoo\ZooManagementTest\obj\Debug\Zoo.exe
 E:\Институт\Repositoriy\Zoo\ZooManagementTest\obj\Debug\Zoo.pdb
 D:\Veronika\Zoo\ZooManagementTest\obj\Debug\Zoo.FormVisitor.resources
+E:\Институт\Repositoriy\Zoo\ZooManagementTest\obj\Debug\Zoo.FormExpensesAndIncome.resources

@@ -42,6 +42,7 @@
             this.vistorsListBox = new System.Windows.Forms.ListBox();
             this.showAllVisitorsButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
+            this.expensesAndIncomeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // addButton
@@ -178,11 +179,22 @@
             this.saveButton.UseVisualStyleBackColor = false;
             this.saveButton.Click += new System.EventHandler(this.SaveLists);
             // 
+            // expensesAndIncomeButton
+            // 
+            this.expensesAndIncomeButton.Location = new System.Drawing.Point(271, 504);
+            this.expensesAndIncomeButton.Name = "expensesAndIncomeButton";
+            this.expensesAndIncomeButton.Size = new System.Drawing.Size(62, 51);
+            this.expensesAndIncomeButton.TabIndex = 10;
+            this.expensesAndIncomeButton.Text = "Expenses and Income";
+            this.expensesAndIncomeButton.UseVisualStyleBackColor = true;
+            this.expensesAndIncomeButton.Click += new System.EventHandler(this.expensesAndIncomeButton_Click);
+            // 
             // Director
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 607);
+            this.Controls.Add(this.expensesAndIncomeButton);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.showAllVisitorsButton);
             this.Controls.Add(this.label3);
@@ -220,6 +232,7 @@
         private System.Windows.Forms.ListBox vistorsListBox;
         private System.Windows.Forms.Button showAllVisitorsButton;
         private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button expensesAndIncomeButton;
     }
 }
 

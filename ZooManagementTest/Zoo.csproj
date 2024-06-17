@@ -68,6 +68,9 @@
     <Compile Include="EmployeeEdit.Designer.cs">
       <DependentUpon>EmployeeEdit.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExpensesAndIncome.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FormVisitor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EmployeeEdit.resx">
       <DependentUpon>EmployeeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpensesAndIncome.resx">
+      <DependentUpon>ExpensesAndIncome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormVisitor.resx">
       <DependentUpon>FormVisitor.cs</DependentUpon>
